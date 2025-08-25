@@ -50,7 +50,7 @@ const App = () => {
         bgcolor: "#f5f5f5",
       }}
     >
-      <Card sx={{ width: "80%", maxWidth: 900, p: 3, boxShadow: 4 }}>
+      <Card sx={{ width: "80%", maxWidth: 1500, p: 3, boxShadow: 4,height: "80%", maxheight: 900,}}>
         <CardContent sx={{ display: "flex" }}>
           <AddTaskForm onAdd={handleAddTask} />
 

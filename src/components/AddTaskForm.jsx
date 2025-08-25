@@ -32,14 +32,15 @@ const AddTaskForm = ({ onAdd }) => {
         value={task.description}
         onChange={(e) => setTask({ ...task, description: e.target.value })}
       />
-      <Button
-        variant="contained"
-        sx={{ mt: 2, bgcolor: "blue" }}
-        fullWidth
-        onClick={handleAdd}
-      >
-        Add
-      </Button>
+   <Button
+  variant="contained"
+  size="small"
+  sx={{ mt: 2, bgcolor: "blue", width: "150px",ml:30 }} // set your desired width
+  onClick={handleAdd}
+>
+  Add
+</Button>
+
     </Box>
   );
 };
