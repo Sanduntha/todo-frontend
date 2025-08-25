@@ -4,12 +4,11 @@ import AddTaskForm from "./components/AddTaskForm";
 import TaskList from "./components/TaskList";
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/tasks"; // Spring Boot backend
+const API_URL = "http://localhost:8080/api/tasks"; 
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
 
-  // Load tasks from backend
   useEffect(() => {
     fetchTasks();
   }, []);
@@ -53,10 +52,8 @@ const App = () => {
     >
       <Card sx={{ width: "80%", maxWidth: 900, p: 3, boxShadow: 4 }}>
         <CardContent sx={{ display: "flex" }}>
-          {/* Left: Add Task */}
           <AddTaskForm onAdd={handleAddTask} />
 
-          {/* Right: Task List */}
           <Box sx={{ flex: 1, pl: 3 }}>
             <Typography variant="h6" gutterBottom>
               Task List
