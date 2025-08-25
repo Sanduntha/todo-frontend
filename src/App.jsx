@@ -4,7 +4,7 @@ import AddTaskForm from "./components/AddTaskForm";
 import TaskList from "./components/TaskList";
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/tasks"; 
+const API_URL = "http://localhost:8080/api/tasks";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -50,8 +50,8 @@ const App = () => {
         bgcolor: "#f5f5f5",
       }}
     >
-      <Card sx={{ width: "80%", maxWidth: 1500, p: 3, boxShadow: 4,height: "80%", maxheight: 900,}}>
-        <CardContent sx={{ display: "flex" }}>
+      <Card sx={{ width: "80%", maxWidth: 1500, p: 3, boxShadow: 4, height: "80%", maxheight: 900, }}>
+        <CardContent sx={{ display: "flex", alignItems: "stretch", minHeight: "75vh", }}>
           <AddTaskForm onAdd={handleAddTask} />
 
           <Box sx={{ flex: 1, pl: 3 }}>
